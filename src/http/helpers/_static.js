@@ -16,7 +16,7 @@ module.exports = function _static(assetPath) {
   }
   else {
     let bucket = getBucket(arc.static)
-    let url = `https://s3.amazonaws.com/${bucket}${assetPath}`
+    let url = `https://${bucket}.s3.amazonaws.com${assetPath}`
     return url
   }
 }
